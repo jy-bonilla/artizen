@@ -7,7 +7,7 @@ import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
+export const metadata = {
   title: "Admin Dashboard",
   description: "Admin Dashboard",
 };
@@ -22,7 +22,8 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <ModalProvider/>
-        {children}</body>
+        {children}
+        </body>
     </html>
     </ClerkProvider>
   );
